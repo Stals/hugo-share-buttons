@@ -8,7 +8,6 @@
 
 {{ $pageURL := .Permalink | safeURL }} {{/*urlquery is undocumented, but maybe should be used here instead*/}}
 {{ $pageTitle := .Title | safeHTML }}
-{{ $domain := .Site.BaseURL | safeURL }}
 
 <style>
 .resp-sharing-button__link,
