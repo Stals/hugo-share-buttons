@@ -37,6 +37,11 @@
 {{ $pageURL := .Permalink | safeURL }} {{/*urlquery is undocumented, but maybe should be used here instead*/}}
 {{ $pageTitle := .Title | safeHTML }}
 
+{{ $buttonMargin := "0.5em" }}
+{{ if (isset .Site.Params.ShareButtons "buttonmargin" ) }}
+  {{ $buttonMargin = .Site.Params.ShareButtons.ButtonMargin }}
+{{ end }}
+
 
 <style>
 .resp-sharing-button__link,
@@ -47,7 +52,7 @@
 .resp-sharing-button__link {
   text-decoration: none;
   color: #fff !important;
-  margin: 0.25em 
+  margin: {{ $buttonMargin }}
 }
 
 .resp-sharing-button {
