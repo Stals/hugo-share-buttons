@@ -14,7 +14,7 @@
 {{ $supportedNetworks := (slice "facebook" "twitter" "tumblr" "email" "pinterest" "linkedin" "reddit" "xing" "whatsapp" "hackernews" "vk" "telegram")}}
 
 {{ if (not (isset .Site.Params.ShareButtons "networks")) }}
-  {{ errorf "'networks' should be specified inside shareButtons in hugo config file, supported: %q " (delimit $supportedNetworks ", ") }}
+  {{ errorf "'networks' list is not specified inside shareButtons in hugo config file, supported: %q " (delimit $supportedNetworks ", ") }}
 {{ end }}
 
 {{ range $network := .Site.Params.ShareButtons.Networks }}
