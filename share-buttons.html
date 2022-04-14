@@ -1,6 +1,16 @@
 {{/* Made using https://sharingbuttons.io/ */}}
 {{ if not .Params.disableShare }}
 
+{{ if (not (isset .Site.Params.ShareButtons "size")) }}
+{{ errorf "size should be specified inside shareButtons in hugo config file" }}
+{{ end }}
+
+{{ $possibleSizes := (slice "small" "medium" "large") }}
+{{ if not (in  $possibleSizes .Site.Params.ShareButtons.Size) }}
+{{ errorf "size is %q but should be set to one of possible sizes: %q " .Site.Params.ShareButtons.Size (delimit $possibleSizes ", ") }}
+{{ end }}
+
+
 {{ $linkPrefix := "" }}
 {{ if eq .Site.Params.ShareButtons.Size "large" }}
 {{ $linkPrefix = "Share on " }}
