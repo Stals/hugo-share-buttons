@@ -2,18 +2,31 @@
 {{ if not .Params.disableShare }}
 
 {{ if (not (isset .Site.Params.ShareButtons "size")) }}
-{{ errorf "size should be specified inside shareButtons in hugo config file" }}
+  {{ errorf "'size' should be specified inside shareButtons in hugo config file" }}
 {{ end }}
 
 {{ $possibleSizes := (slice "small" "medium" "large") }}
 {{ if not (in  $possibleSizes .Site.Params.ShareButtons.Size) }}
-{{ errorf "size is %q but should be set to one of possible sizes: %q " .Site.Params.ShareButtons.Size (delimit $possibleSizes ", ") }}
+  {{ errorf "'size' is %q but should be set to one of possible sizes: %q " .Site.Params.ShareButtons.Size (delimit $possibleSizes ", ") }}
+{{ end }}
+
+
+{{ $supportedNetworks := (slice "facebook" "twitter" "tumblr" "email" "pinterest" "linkedin" "reddit" "xing" "whatsapp" "hackernews" "vk" "telegram")}}
+
+{{ if (not (isset .Site.Params.ShareButtons "networks")) }}
+  {{ errorf "'networks' should be specified inside shareButtons in hugo config file, supported: %q " (delimit $supportedNetworks ", ") }}
+{{ end }}
+
+{{ range $network := .Site.Params.ShareButtons.Networks }}
+  {{ if not (in $supportedNetworks $network) }}
+    {{ errorf "%q is not a supported network, please only provide one of supported: %q " $network (delimit $supportedNetworks ", ") }}
+  {{ end }}
 {{ end }}
 
 
 {{ $linkPrefix := "" }}
 {{ if eq .Site.Params.ShareButtons.Size "large" }}
-{{ $linkPrefix = "Share on " }}
+  {{ $linkPrefix = "Share on " }}
 {{ end }}
 
 {{ $icon := "normal" }}
