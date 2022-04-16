@@ -23,6 +23,6 @@ You can specify icon as one of the following:
 - circle
 - solidcircle
 
-<img src="https://letsmakeagame.net/github/hugo-share-buttons/hugo-share-buttons-icon-options.png">
+<img src="https://letsmakeagame.net/github/hugo-share-buttons/hugo-share-buttons-icon-options.png" height="60">
 
 Currently in development by https://letsmakeagame.net/
