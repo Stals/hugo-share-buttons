@@ -14,8 +14,35 @@ Copy the share-buttons.html and place it inside layouts/partials,
 then place this inside one of your template files:
 ``` {{ partial "share-buttons" . }} ```
 
+Create a shareButtons section under 'params' in your root config file (i.e. config.yaml)
+As a jumping of point you can use these
+for YAML:
+```
+shareButtons:
+  size: small
+  networks:
+    - facebook
+    - twitter
+```
+for TOML:
+```
+[params.shareButtons]
+  size = "small"
+  networks = ["facebook", "twitter"]
+```
+put it at the end of you [params], or everything else will be a part of [params.shareButtons] and not [params]
+
+for JSON:
+```
+  "shareButtons": {
+    "networks": [
+      "facebook",
+      "twitter"
+    ],
+    "size": "small"
+  }
+```
 ## Settings
-Create a shareButtons section in your root config file (i.e. config.yaml)
 
 ### - networks (required)
 'networks' supported: facebook, twitter, tumblr, email, pinterest, linkedin, reddit, xing, whatsapp, hackernews, vk, telegram
@@ -37,6 +64,9 @@ You can specify icon as one of the following:
 <img src="https://letsmakeagame.net/github/hugo-share-buttons/hugo-share-buttons-icon-options.png" height="70">
 
 ### - fontsize (optional)
+
+
+## Examples
 
 
 Currently in development by https://letsmakeagame.net/
