@@ -16,6 +16,21 @@ then place this inside one of your template files:
 ## Settings
 Create a shareButtons section in your root config file (i.e. config.yaml)
 
+### networks (required)
+'networks' supported:
+- facebook
+- twitter
+- tumblr
+- email
+- pinterest
+- linkedin
+- reddit
+- xing
+- whatsapp
+- hackernews
+- vk
+- telegram
+
 ### size (required)
 'size' can be one of
 - small
