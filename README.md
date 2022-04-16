@@ -17,19 +17,7 @@ then place this inside one of your template files:
 Create a shareButtons section in your root config file (i.e. config.yaml)
 
 ### networks (required)
-'networks' supported:
-- facebook
-- twitter
-- tumblr
-- email
-- pinterest
-- linkedin
-- reddit
-- xing
-- whatsapp
-- hackernews
-- vk
-- telegram
+'networks' supported: facebook, twitter, tumblr, email, pinterest, linkedin, reddit, xing, whatsapp, hackernews, vk, telegram
 
 ### size (required)
 'size' can be one of
@@ -37,8 +25,6 @@ Create a shareButtons section in your root config file (i.e. config.yaml)
 - medium
 - large
 <img src="https://letsmakeagame.net/github/hugo-share-buttons/hugo-share-buttons-sizes.png" height="70">
-
-
 
 ### icon (optional)
 You can specify icon as one of the following:
@@ -48,5 +34,8 @@ You can specify icon as one of the following:
 - solidcircle
 
 <img src="https://letsmakeagame.net/github/hugo-share-buttons/hugo-share-buttons-icon-options.png" height="70">
+
+### fontsize (optional)
+
 
 Currently in development by https://letsmakeagame.net/
