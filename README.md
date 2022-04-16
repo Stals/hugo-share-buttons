@@ -5,6 +5,7 @@ It is based on sharingbuttons.io and can look something like this:
 <img src="https://letsmakeagame.net/github/hugo-share-buttons/hugo-share-buttons-small.png" height="60">
 
 or like this:
+<br>
 <img src="https://letsmakeagame.net/github/hugo-share-buttons/hugo-share-buttons-medium.png" height="60">
 
 
