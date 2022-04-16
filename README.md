@@ -1,6 +1,7 @@
 # Hugo Share Buttons
 hugo-share-buttons is a [partial template](https://gohugo.io/templates/partials/) to show social share buttons on your Hugo website, without any JavaScript or http requests.
 It is based on sharingbuttons.io and can look like this:
+<br>
 <img src="https://letsmakeagame.net/github/hugo-share-buttons/hugo-share-buttons-small.png" height="60">
 
 or like this:
