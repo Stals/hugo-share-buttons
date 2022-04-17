@@ -164,7 +164,8 @@ author = "Nikola Tesla"
 </tr>
 </tbody>
 </table>
-
+And this would be the result:
+<br>
 <img src="https://letsmakeagame.net/github/hugo-share-buttons/hugo-share-buttons-small.png" height="60">
 
 Currently in development by https://letsmakeagame.net/
