@@ -68,6 +68,8 @@ For TOML - put it at the end of you [params], or everything else will be a part 
 
 Also note that if your runing hugo locally with ```hugo server```, then you may need to stop it and re-run for changes to take effect.
 
+Instead of copying the .html file you can also use a [submodule](https://devconnected.com/how-to-add-and-update-git-submodules/), it is more involved but may allow for easier updates in the future.
+
 ## Settings
 
 ### - networks (required)
