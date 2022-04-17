@@ -1,5 +1,5 @@
 # Hugo Share Buttons
-hugo-share-buttons is a [partial template](https://gohugo.io/templates/partials/) to show social share buttons on your Hugo website, without any JavaScript or http requests.
+hugo-share-buttons is a [partial template](https://gohugo.io/templates/partials/) that allows you to show social share buttons on your Hugo website, without any JavaScript or http requests.
 It is based on sharingbuttons.io and can look something like this:
 <br>
 <img src="https://letsmakeagame.net/github/hugo-share-buttons/hugo-share-buttons-all.png" height="60">
@@ -49,11 +49,11 @@ shareButtons:
     
 ```
   "shareButtons": {
-    "networks": [
+    "networks" : [
       "facebook",
       "twitter"
     ],
-    "size": "small"
+    "size" : "small"
   }
 ```
 
@@ -93,22 +93,79 @@ Default is 0.5em.
 The button size is changed by specifying a font size, because everything else is dependatnt on 'em' numbers, which is the sharingbuttons.io recommended way.
 
 ## Examples
+Let's do a bigger example of how shareButtons would look in your config file, and the result it produces
+
+<table>
+<tr>
+<th>config.yaml</th>
+<th>config.toml</th>
+<th>config.json</th>
+</tr>
+<tbody>
+<tr>
+<td>
+    
+```
+baseURL: https://yoursite.example.com/
+params:
+  author: Nikola Tesla
+  shareButtons:
+    networks:
+    - facebook
+    - twitter
+    - email
+    - reddit
+    size: small
+    icon: solid
+    buttonMargin: 0.2em
 
 ```
+
+</td>
+<td>
+    
+```
+baseURL = "https://yoursite.example.com/"
+
+[params]
+author = "Nikola Tesla"
+
+  [params.shareButtons]
+  networks = [ "facebook", "twitter", "email", "reddit" ]
+  size = "small"
+  icon = "solid"
+  buttonMargin = "0.2em"
+```
+
+</td>
+<td>
+    
+```
 {
-   "baseURL":"https://yoursite.example.com/",
+   "baseURL" : "https://yoursite.example.com/",
    "params":{
       "author":"Nikola Tesla",
       "shareButtons":{
          "networks":[
             "facebook",
-            "twitter"
+            "twitter",
+            "email",
+            "reddit"
          ],
-         "size":"small",
-         "icon":"solid"
+         "size" : "small",
+         "icon" : "solid",
+         "buttonMargin" : "0.2em"
       }
    }
 }
+
 ```
+
+</td>
+</tr>
+</tbody>
+</table>
+
+<img src="https://letsmakeagame.net/github/hugo-share-buttons/hugo-share-buttons-small.png" height="60">
 
 Currently in development by https://letsmakeagame.net/
