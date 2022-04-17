@@ -106,19 +106,18 @@ Let's do a bigger example of how shareButtons would look in your config file, an
 <td>
     
 ```
-baseURL: https://yoursite.example.com/
+baseURL: 'https://yoursite.example.com/'
 params:
   author: Nikola Tesla
   shareButtons:
     networks:
-    - facebook
-    - twitter
-    - email
-    - reddit
+      - facebook
+      - twitter
+      - email
+      - reddit
     size: small
     icon: solid
     buttonMargin: 0.2em
-
 ```
 
 </td>
