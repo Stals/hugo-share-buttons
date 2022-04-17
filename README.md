@@ -2,7 +2,7 @@
 hugo-share-buttons is a [partial template](https://gohugo.io/templates/partials/) to show social share buttons on your Hugo website, without any JavaScript or http requests.
 It is based on sharingbuttons.io and can look something like this:
 <br>
-<img src="https://letsmakeagame.net/github/hugo-share-buttons/hugo-share-buttons-small.png" height="60">
+<img src="https://letsmakeagame.net/github/hugo-share-buttons/hugo-share-buttons-all.png" height="60">
 
 or like this:
 <br>
@@ -85,15 +85,14 @@ You can specify icon as one of the following:
 
 <img src="https://letsmakeagame.net/github/hugo-share-buttons/hugo-share-buttons-icon-options.png" height="70">
 
-### - margins (optional)
+### - buttonMargin (optional)
 You can specify margins to change the spacing between buttons. 
-Default is 0.5em
-@check
+Default is 0.5em.
+
 ### - fontsize (optional)
 The button size is changed by specifying a font size, because everything else is dependatnt on 'em' numbers, which is the sharingbuttons.io recommended way.
 
 ## Examples
-@tabulate
 
 ```
 {
