@@ -14,8 +14,9 @@ Copy the share-buttons.html and place it inside layouts/partials,
 then place this inside one of your template files:
 ``` {{ partial "share-buttons" . }} ```
 
-Create a shareButtons section under 'params' in your root config file (i.e. config.yaml)
-As a jumping of point you can use these
+Create a shareButtons section under 'params' in your root config file (i.e. config.yaml).
+
+As a jumping of point you can use these:
 
 <table>
 <tr>
