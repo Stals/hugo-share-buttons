@@ -11,8 +11,10 @@ or like this:
 
 ## How To Use
 Copy the share-buttons.html and place it inside layouts/partials,
-then place this inside one of your template files:
+and then use this inside one of your template files:
 ``` {{ partial "share-buttons" . }} ```
+
+Probably in the ```single.html``` of your theme.
 
 Create a shareButtons section under 'params' in your root config file (i.e. config.yaml).
 
@@ -62,7 +64,8 @@ shareButtons:
 </tr>
 </tbody>
 </table>
-For TOML - put it at the end of you [params], or everything else will be a part of [params.shareButtons] and not [params]
+For TOML - put it at the end of you [params], or everything else will be a part of [params.shareButtons] and not [params].
+
 Also note that if your runing hugo locally with ```hugo server```, then you may need to stop it and re-run for changes to take effect.
 
 ## Settings
@@ -168,6 +171,12 @@ author = "Nikola Tesla"
 And this would be the result:
 <br>
 <img src="https://letsmakeagame.net/github/hugo-share-buttons/hugo-share-buttons-small.png" height="60">
+
+## disableShare
+You may need to disable share buttons on certain pages, for example, on you privacy policy page.
+To do this you can add 
+```disableShare: true```
+to the [frontmatter](https://gohugo.io/content-management/front-matter/) of this page.
 
 ---
 Also, please check out my [Hugo related blog posts](https://letsmakeagame.net/tag/hugo/), or [useful Hugo shortcodes](https://github.com/Stals/lmg-hugo).
