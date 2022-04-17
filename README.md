@@ -48,7 +48,7 @@ shareButtons:
 <td>
     
 ```
-  "shareButtons": {
+  "shareButtons" : {
     "networks" : [
       "facebook",
       "twitter"
@@ -142,10 +142,10 @@ author = "Nikola Tesla"
 ```
 {
    "baseURL" : "https://yoursite.example.com/",
-   "params":{
-      "author":"Nikola Tesla",
-      "shareButtons":{
-         "networks":[
+   "params" : {
+      "author" : "Nikola Tesla",
+      "shareButtons" : {
+         "networks" : [
             "facebook",
             "twitter",
             "email",
