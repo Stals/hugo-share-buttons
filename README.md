@@ -17,34 +17,17 @@ then place this inside one of your template files:
 Create a shareButtons section under 'params' in your root config file (i.e. config.yaml)
 As a jumping of point you can use these
 
-
-
 <table>
-  <tr>
-    <th>for YAML</th>
-    <th>for TOML</th>
-    <th>for JSON</th>
-  </tr>
+<tr>
+<th>for YAML</th>
+<th>for TOML</th>
+<th>for JSON</th>
+</tr>
 <tbody>
-  <tr>
-    <td>shareButtons:<br>  size: small<br>  networks:<br>    - facebook<br>    - twitter</td>
-    <td>[params.shareButtons]<br>  size = "small"<br>  networks = ["facebook", "twitter"]</td>
-    <td>"shareButtons": {<br>    "networks": [<br>      "facebook",<br>      "twitter"<br>    ],<br>    "size": "small"<br>  }</td>
-  </tr>
-</tbody>
-</table>
-
-<table>
-  <tr>
-    <th>for YAML</th>
-    <th>for TOML</th>
-    <th>for JSON</th>
-  </tr>
-<tbody>
-  <tr>
-    <td>
+<tr>
+<td>
     
-    ```
+```
 shareButtons:
   size: small
   networks:
@@ -52,51 +35,18 @@ shareButtons:
     - twitter
 ```
 
-    </td>
-    <td>
+</td>
+<td>
     
-    ```
+```
 [params.shareButtons]
   size = "small"
   networks = ["facebook", "twitter"]
 ```
 
-    </td>
-    <td>
+</td>
+<td>
     
-    ```
-  "shareButtons": {
-    "networks": [
-      "facebook",
-      "twitter"
-    ],
-    "size": "small"
-  }
-```
-
-    </td>
-  </tr>
-</tbody>
-</table>
-
-
-for YAML:
-```
-shareButtons:
-  size: small
-  networks:
-    - facebook
-    - twitter
-```
-for TOML:
-```
-[params.shareButtons]
-  size = "small"
-  networks = ["facebook", "twitter"]
-```
-put it at the end of you [params], or everything else will be a part of [params.shareButtons] and not [params]
-
-for JSON:
 ```
   "shareButtons": {
     "networks": [
@@ -107,7 +57,13 @@ for JSON:
   }
 ```
 
-Note that if your runing hugo locally with ```hugo server```, then you may need to stop it and re-run for changes to take effect.
+</td>
+</tr>
+</tbody>
+</table>
+For TOML - put it at the end of you [params], or everything else will be a part of [params.shareButtons] and not [params]
+Also note that if your runing hugo locally with ```hugo server```, then you may need to stop it and re-run for changes to take effect.
+
 ## Settings
 
 ### - networks (required)
