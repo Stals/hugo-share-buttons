@@ -16,6 +16,70 @@ then place this inside one of your template files:
 
 Create a shareButtons section under 'params' in your root config file (i.e. config.yaml)
 As a jumping of point you can use these
+
+
+
+<table>
+  <tr>
+    <th>for YAML</th>
+    <th>for TOML</th>
+    <th>for JSON</th>
+  </tr>
+<tbody>
+  <tr>
+    <td>shareButtons:<br>  size: small<br>  networks:<br>    - facebook<br>    - twitter</td>
+    <td>[params.shareButtons]<br>  size = "small"<br>  networks = ["facebook", "twitter"]</td>
+    <td>"shareButtons": {<br>    "networks": [<br>      "facebook",<br>      "twitter"<br>    ],<br>    "size": "small"<br>  }</td>
+  </tr>
+</tbody>
+</table>
+
+<table>
+  <tr>
+    <th>for YAML</th>
+    <th>for TOML</th>
+    <th>for JSON</th>
+  </tr>
+<tbody>
+  <tr>
+    <td>
+    
+    ```
+shareButtons:
+  size: small
+  networks:
+    - facebook
+    - twitter
+```
+
+    </td>
+    <td>
+    
+    ```
+[params.shareButtons]
+  size = "small"
+  networks = ["facebook", "twitter"]
+```
+
+    </td>
+    <td>
+    
+    ```
+  "shareButtons": {
+    "networks": [
+      "facebook",
+      "twitter"
+    ],
+    "size": "small"
+  }
+```
+
+    </td>
+  </tr>
+</tbody>
+</table>
+
+
 for YAML:
 ```
 shareButtons:
@@ -42,6 +106,8 @@ for JSON:
     "size": "small"
   }
 ```
+
+Note that if your runing hugo locally with ```hugo server```, then you may need to stop it and re-run for changes to take effect.
 ## Settings
 
 ### - networks (required)
@@ -63,10 +129,31 @@ You can specify icon as one of the following:
 
 <img src="https://letsmakeagame.net/github/hugo-share-buttons/hugo-share-buttons-icon-options.png" height="70">
 
+### - margins (optional)
+You can specify margins to change the spacing between buttons. 
+Default is 0.5em
+@check
 ### - fontsize (optional)
-
+The button size is changed by specifying a font size, because everything else is dependatnt on 'em' numbers, which is the sharingbuttons.io recommended way.
 
 ## Examples
+@tabulate
 
+```
+{
+   "baseURL":"https://yoursite.example.com/",
+   "params":{
+      "author":"Nikola Tesla",
+      "shareButtons":{
+         "networks":[
+            "facebook",
+            "twitter"
+         ],
+         "size":"small",
+         "icon":"solid"
+      }
+   }
+}
+```
 
 Currently in development by https://letsmakeagame.net/
