@@ -18,7 +18,7 @@ Probably in the ```single.html``` of your theme.
 
 Create a shareButtons section under 'params' in your root config file (i.e. config.yaml).
 
-As a jumping of point you can use these:
+As a jumping-off point you can use these:
 
 <table>
 <tr>
