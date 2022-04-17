@@ -167,5 +167,6 @@ author = "Nikola Tesla"
 And this would be the result:
 <br>
 <img src="https://letsmakeagame.net/github/hugo-share-buttons/hugo-share-buttons-small.png" height="60">
-<hr>
+
+---
 Also, please check out my [Hugo related blog posts](https://letsmakeagame.net/tag/hugo/), or [useful Hugo shortcodes](https://github.com/Stals/lmg-hugo).
