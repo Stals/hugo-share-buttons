@@ -181,4 +181,5 @@ To do this you can add
 to the [frontmatter](https://gohugo.io/content-management/front-matter/) of this page.
 
 ---
-Also, please check out my [Hugo related blog posts](https://letsmakeagame.net/tag/hugo/) or [useful Hugo shortcodes](https://github.com/Stals/lmg-hugo).
+You can find [more examples and details on making your own social share buttons in the blog post](https://letsmakeagame.net/social-media-share-buttons-for-a-hugo-website/). 
+Also, please check out my [Hugo-related blog posts](https://letsmakeagame.net/tag/hugo/) or [useful Hugo shortcodes](https://github.com/Stals/lmg-hugo).
