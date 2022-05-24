@@ -2,11 +2,11 @@
 hugo-share-buttons is a [partial template](https://gohugo.io/templates/partials/) that allows you to show social share buttons on your Hugo website without any JavaScript or http requests.
 It is based on sharingbuttons.io and can look something like this:
 <br>
-<img src="https://letsmakeagame.net/github/hugo-share-buttons/hugo-share-buttons-all.png" style="max-height: 60px;">
+<img src="https://letsmakeagame.net/github/hugo-share-buttons/hugo-share-buttons-all.png" height="60">
 
 or like this:
 <br>
-<img src="https://letsmakeagame.net/github/hugo-share-buttons/hugo-share-buttons-medium.png" style="max-height: 60px;">
+<img src="https://letsmakeagame.net/github/hugo-share-buttons/hugo-share-buttons-medium.png" height="60">
 
 
 ## How To Use
@@ -80,7 +80,7 @@ Instead of copying the .html file, you can also use a [submodule](https://devcon
 - small
 - medium
 - large
-<img src="https://letsmakeagame.net/github/hugo-share-buttons/hugo-share-buttons-sizes.png" style="max-height: 70px;">
+<img src="https://letsmakeagame.net/github/hugo-share-buttons/hugo-share-buttons-sizes.png" height="70">
 
 ### - icon (optional)
 You can specify 'icon' as one of the following:
@@ -89,7 +89,7 @@ You can specify 'icon' as one of the following:
 - circle
 - solidcircle
 
-<img src="https://letsmakeagame.net/github/hugo-share-buttons/hugo-share-buttons-icon-options.png" style="max-height: 70px;">
+<img src="https://letsmakeagame.net/github/hugo-share-buttons/hugo-share-buttons-icon-options.png" height="70">
 
 ### - buttonMargin (optional)
 You can specify margins to change the spacing between buttons. 
@@ -172,7 +172,7 @@ author = "Nikola Tesla"
 </table>
 And this would be the result:
 <br>
-<img src="https://letsmakeagame.net/github/hugo-share-buttons/hugo-share-buttons-small.png" style="max-height: 60px;">
+<img src="https://letsmakeagame.net/github/hugo-share-buttons/hugo-share-buttons-small.png" height="60">
 
 ## disableShare
 You may need to disable share buttons on certain pages, for example, on your privacy policy page.
